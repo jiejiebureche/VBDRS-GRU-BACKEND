@@ -4,8 +4,6 @@ import tensorflow as tf
 from tensorflow.keras.models import load_model
 import numpy as np
 from utils.audio_utils import extract_features
-import keras
-print("Keras is coming from:", keras.__file__)
 import tensorflow.keras as tf_keras
 print("Using tf.keras from:", tf_keras.__file__)
 
