@@ -1,5 +1,6 @@
 # Core ML and Audio Processing
 tensorflow==2.13.0
+keras==0.0.0
 numpy==1.24.3
 librosa
 soundfile
