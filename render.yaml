@@ -3,5 +3,5 @@ services:
     name: vbdrs-backend
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python app.py  # <-- adjust if needed
+    startCommand: python vbdrs-backend/app.py  # <-- adjust if needed
     pythonVersion: 3.10.0
