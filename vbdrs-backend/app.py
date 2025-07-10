@@ -11,7 +11,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load your model
-model = load_model("vbdrs-backend/model/gru_model.keras")
+model = load_model("model/gru_model_1.keras")
 
 # Label map (adjust based on your model training)
 emotion_labels = ["fear", "angry", "disgust", "neutral", "sad", "happy"]
