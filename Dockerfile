@@ -19,6 +19,7 @@ COPY . /app
 # Install Python dependencies
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
+RUN pip install keras==3.2.1 tensorflow==2.16.1
 
 # Expose the port Flask runs on
 EXPOSE 8000
