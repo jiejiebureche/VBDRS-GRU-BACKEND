@@ -4,15 +4,13 @@ import tensorflow as tf
 from tensorflow.keras.models import load_model
 import numpy as np
 from utils.audio_utils import extract_features
-import keras
-
 
 
 app = Flask(__name__)
 CORS(app)
 
 # Load your model
-model = keras.models.load_model("vbdrs-backend/model/gru_model.keras")
+model = load_model("vbdrs-backend/model/gru_model_1.keras")
 
 # Label map (adjust based on your model training)
 emotion_labels = ["fear", "angry", "disgust", "neutral", "sad", "happy"]
@@ -65,4 +63,4 @@ def predict():
         return jsonify({'error': 'Failed to process audio'}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8000)
+    app.run(debug=False, host='0.0.0.0', port=8000)
