@@ -24,4 +24,4 @@ RUN pip install -r requirements.txt
 EXPOSE 8000
 
 # Run your app
-CMD ["python", "app.py"]
+CMD ["python", "vbdrs-backend/app.py"]
